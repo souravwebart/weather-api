@@ -1,0 +1,105 @@
+html{
+    font-family: 'Roboto Slab', sans-serif;
+  }
+  body{
+    background: #55D6F4;
+    color: #313E48;
+  }
+  img{
+    max-width: 100%;
+  }
+  
+  .box{
+    margin: 3cm auto;
+    background: #ffffff;
+    padding: 2em 0;
+    width: 300px;
+    border-radius: 3px;
+  
+    }
+  
+    h1{
+      font-size: 2em;
+      text-align: center;
+    }
+    .temp{
+      font-size: 4em;
+      line-height: 1;
+      text-align: center;
+      display: block;
+      margin-bottom: 24px;
+      margin-top: 20px;
+    }
+    .high-low{
+      font-size: 1em;
+      color: lighten(#313E48, 20%);
+      text-align: center;
+      display: block;
+      font-weight: 100;
+    }
+    .inputData{
+      text-align: center;    
+      position: center;
+      margin: 0 auto;
+    }
+    .inputField{
+      width: 200px;
+      height: 50px; 
+      text-align: center;   
+      border-radius: 25px;
+      align-items: center;
+      justify-content: center;
+    }
+  .spin{
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    text-align: center;
+    width: 65px;
+  }
+  
+  
+    .bubble.black {
+      background-color: #313E48;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      padding: 0px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+  }
+  
+    .bubble.black:after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      left: 14px;
+      border-style: solid;
+      border-width: 29px 15px 0;
+      border-color: #313E48 transparent;
+      display: block;
+      width: 0;
+      z-index: 1;
+      transform: rotate(30deg);
+    }
+
+    .error{
+        text-align: center;
+    }
+  
+  
+  /* //Animation */
+  .spin img{
+    animation: spin 5s linear infinite;
+    animation-play-state: paused;
+  }
+  
+  .box:hover .spin img{
+     animation-play-state: running;
+  }
+  @keyframes spin {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
